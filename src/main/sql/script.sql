@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.2.12deb2+deb8u1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2015 at 12:55 AM
--- Server version: 5.5.39
--- PHP Version: 5.4.31
+-- Generation Time: Nov 22, 2015 at 02:26 AM
+-- Server version: 5.5.46-0+deb8u1
+-- PHP Version: 5.6.14-0+deb8u1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `opiniones`
 --
+CREATE DATABASE IF NOT EXISTS `opiniones` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `opiniones`;
 
 -- --------------------------------------------------------
 
@@ -32,20 +34,7 @@ CREATE TABLE IF NOT EXISTS `opiniones` (
   `texto` varchar(500) NOT NULL,
   `fecha` datetime NOT NULL,
   `puntuacion` int(11) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
-
---
--- Dumping data for table `opiniones`
---
-
-INSERT INTO `opiniones` (`id`, `titulo`, `texto`, `fecha`, `puntuacion`) VALUES
-(1, 'nada', 'nada mas', '2015-11-21 21:36:13', -1),
-(2, 'nada', 'nada mas', '2015-11-21 21:36:18', -1),
-(3, 'nada', 'nada mas', '2015-11-21 22:07:30', -1),
-(4, 'dfgdfg', 'dfg', '2015-11-21 22:13:49', 7),
-(5, 'hola hola', 'que pasa', '2015-11-21 22:14:04', 4),
-(6, 'dsd', 'sf', '2015-11-21 22:20:13', 4),
-(7, 'vjg', 'ghjg', '2015-11-21 22:22:00', 6);
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
